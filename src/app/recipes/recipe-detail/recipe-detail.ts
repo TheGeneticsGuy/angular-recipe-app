@@ -35,7 +35,8 @@ export class RecipeDetail implements OnInit {
   }
 
   onDeleteRecipe() {
-    // pending
+    this.recipeService.deleteRecipe(this.id);
+    this.router.navigate(['/recipes']);
   }
 
 }
